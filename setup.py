@@ -8,7 +8,6 @@ setup(
     author_email='starshootercity@gmail.com',
     url='https://github.com/cometcake575/stython',
     install_requires=[
-        'os',
         'time',
         'sys',
         'random'
