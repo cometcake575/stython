@@ -9,6 +9,12 @@ setup(
     url='https://github.com/cometcake575/stython',
     author='Arun Kapila',
     author_email='starshootercity@gmail.com',
+    install_requires=[
+        'os',
+        'time',
+        'sys',
+        'random'
+    ],
 
     py_modules=['stython'],
 )
