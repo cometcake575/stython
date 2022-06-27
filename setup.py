@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='stython',
-    version='1.5',
+    version='1.6',
     license='MIT',
     author='Arun Kapila',
     author_email='starshootercity@gmail.com',
