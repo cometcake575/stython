@@ -6,7 +6,7 @@ setup(
     license='MIT',
     author='Arun Kapila',
     author_email='starshootercity@gmail.com',
-    packages=find_packages('stython'),
+    packages=find_packages('src'),
     package_dir={'': 'stython'},
     url='https://github.com/cometcake575/stython',
     install_requires=[],
