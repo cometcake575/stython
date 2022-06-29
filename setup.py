@@ -9,7 +9,7 @@ with open('LICENSE.txt') as f:
 
 setup(
     name='stython',
-    version='0.1.1',
+    version='0.1.2',
     description='Stython package',
     long_description=readme,
     author='Arun Kapila',
