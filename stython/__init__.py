@@ -1,4 +1,4 @@
-__version__ = 'dev'
+__version__ = '0.1.3'
 import os, time, sys, random as numbergen
 def boolean(txt):
   if txt.lower() == "true":
@@ -104,3 +104,40 @@ def array_function(function, parameters):
 array_parameters = array_function
 array_param = array_function
 array_func = array_function
+class HexError(Exception):
+  pass
+def hex(num, function="hex", num2=""):
+  if function.lower() not in ["a", "add", "s", "subtract", "m", "multiply", "d", "div", "divide", "dec", "decimal", "h", "hex", "simple", "simplehex"]:
+    raise HexError
+  decnum = int(f"{num}", 16)
+  if function.lower() in ["simple", "simplehex"]:
+    if num != int(num):
+      raise HexError
+    hex = "0"
+    for x in range(0, num):
+      if hex[len(hex) - 1] in ["0", "1", "2", "3", "4", "5", "6", "7", "8"]:
+        newx = str(int(x) + 1)
+      elif hex[len(hex) - 1].lower() == "9":
+        newx = "a"
+      elif hex[len(hex) - 1].lower() == "a":
+        newx = "b"
+      elif hex[len(hex) - 1].lower() == "b":
+        newx = "c"
+      elif hex[len(hex) - 1].lower() == "c":
+        newx = "d"
+      elif hex[len(hex) - 1].lower() == "d":
+        newx = "e"
+      elif hex[len(hex) - 1].lower() == "e":
+        newx = "f"
+      elif hex[len(hex) - 1].lower() == "f":
+        raise HexError
+      newhex = ""
+      loopNum = 0
+      for x in hex:
+        loopNum = loopNum + 1
+        if loopNum == len(hex):
+          newhex = newhex + newx
+        else:
+          newhex = newhex + x
+      hex = newhex
+    return hex.upper()
