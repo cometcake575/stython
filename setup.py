@@ -4,12 +4,12 @@ from setuptools import setup, find_packages
 with open('README.txt') as f:
     readme = f.read()
 
-with open('LICENSE') as f:
+with open('LICENSE.txt') as f:
     license = f.read()
 
 setup(
     name='stython',
-    version='0.1.2',
+    version='0.1.3',
     description='Stython package',
     long_description=readme,
     author='Arun Kapila',
