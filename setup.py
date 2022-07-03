@@ -1,11 +1,9 @@
 from setuptools import setup, find_packages
 
-
-with open('README.txt') as f:
-    readme = f.read()
-
-with open('LICENSE') as f:
-    license = f.read()
+readme = open('README.txt', "r").read()
+license = open('LICENSE.txt', "r").read()
+stython = find_packages()
+print(stython)
 
 setup(
     name='stython',
@@ -16,5 +14,5 @@ setup(
     author_email='starshootercity@gmail.com',
     url='https://github.com/cometcake575/stython',
     license=license,
-    packages=find_packages()
+    packages=stython
 )
