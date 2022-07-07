@@ -1,4 +1,4 @@
-__version__ = '0.1.21'
+__version__ = '1.0.0'
 import os, time, sys, random as numbergen
 def boolean(txt):
   if txt.lower() == "true":
