@@ -1,4 +1,4 @@
-__version__ = '0.1.4'
+__version__ = '0.1.21'
 import os, time, sys, random as numbergen
 def boolean(txt):
   if txt.lower() == "true":
@@ -83,13 +83,13 @@ def random(num1="", num2=""):
   if value > num2:
     value = num2
   return value
-def switch(var, id="global"):
+def switch(var, id="Global"):
   globals()[f"StythonSwitchValue{id}"] = var
-def case(value, id="global"):
+def case(value, id="Global"):
   if globals()[f"StythonSwitchValue{id}"] == value:
     return True
   return False
-def end_switch(id="global"):
+def end_switch(id="Global"):
   del globals()[f"StythonSwitchValue{id}"]
 def fibonacci(n):
   sequence = []
@@ -141,3 +141,5 @@ def hex(num, function="hex", num2=""):
           newhex = newhex + x
       hex = newhex
     return hex.upper()
+#for x in list(globals().items()):
+  #print(x[0])
