@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 setup(
     name='stython',
-    version='0.1.21',
+    version='1.0.0',
     description='The Stython package',
     author='Arun Kapila',
     author_email='starshootercity@gmail.com',
